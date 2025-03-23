@@ -1,0 +1,198 @@
+.waiting {
+	background-color: rgb(214, 187, 12);
+	padding: 0px 5px;
+	color: rgb(0, 0, 0);
+	border-radius: 3px;
+	font-size: 0.9rem;
+	text-align: center;
+}
+.approved {
+	background-color: rgb(134, 255, 123);
+	padding: 0px 5px;
+	color: rgb(0, 0, 0);
+	border-radius: 3px;
+	font-size: 0.9rem;
+	text-align: center;
+	height: 50px;
+}
+.reject {
+	background-color: rgb(255, 124, 80);
+	padding: 0px 5px;
+	color: rgb(0, 0, 0);
+	border-radius: 3px;
+	font-size: 0.9rem;
+	text-align: center;
+}
+.selled {
+	background-color: rgb(255, 245, 108);
+	padding: 0px 5px;
+	color: rgb(0, 0, 0);
+	border-radius: 3px;
+	font-size: 0.9rem;
+	text-align: center;
+	font-weight: 500;
+}
+.closed {
+	background-color: rgb(186, 184, 184);
+	padding: 0px 5px;
+	color: rgb(0, 0, 0);
+	border-radius: 3px;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+
+.block-btn {
+	color: rgb(210, 210, 210);
+}
+
+.show-detail-btn {
+	cursor: pointer;
+	background-color: var(--main-color);
+	padding: 3px 15px;
+	color: rgb(255, 255, 255);
+	border: 1px solid var(--main-color);
+	border-radius: 3px;
+	font-weight: 500;
+	transition: 0.2s ease;
+
+	&:hover {
+		font-weight: 500;
+		background-color: var(--orange-color);
+	}
+}
+
+.info-account {
+	width: 300px;
+	margin-right: 30px;
+	padding-right: 30px;
+	border-right: 1px solid var(--main-color);
+	.name-avatar {
+		display: flex;
+		img {
+			width: 70px;
+			height: 70px;
+			border: 2px solid var(--orange-color);
+			border-radius: 5px;
+		}
+
+		p {
+			font-weight: 500;
+			font-size: 1.2rem;
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+	}
+
+	.info {
+		margin-top: 40px;
+	}
+}
+
+.info-seller {
+	width: 60%;
+	.block-area {
+		width: 100%;
+		text-align: center;
+		margin-top: 60px;
+
+		span {
+			display: inline-block;
+			color: black;
+			width: 140px;
+		}
+
+		select {
+			padding: 5px 10px;
+			width: 200px;
+			border: 1px solid gray;
+			border-radius: 3px;
+			width: 270px;
+		}
+
+		button {
+			display: block;
+			margin: 20px;
+			background-color: white;
+			padding: 5px 10px;
+			border: 1px solid gray;
+			cursor: pointer;
+			transition: 0.2s ease;
+		}
+
+		.block-btn {
+			color: red;
+		}
+
+		button:hover {
+			background-color: rgb(255, 50, 50);
+			color: black;
+		}
+	}
+}
+
+//SELLER DETAIL
+.seller-detail {
+	width: 80%;
+	margin: 10px auto;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 50px;
+
+	h2 {
+		margin-bottom: 20px;
+		font-size: 1.2rem;
+	}
+
+	.detail {
+		display: flex;
+		justify-content: space-evenly;
+		.block-area {
+			width: 100%;
+			text-align: center;
+			margin-top: 20px;
+
+			span {
+				color: black;
+				width: 140px;
+				float: left;
+			}
+
+			select {
+				display: inline-block;
+				padding: 5px 10px;
+				width: 200px;
+				border: 1px solid gray;
+				border-radius: 3px;
+				width: 270px;
+			}
+
+			button {
+				display: block;
+				margin: 20px;
+				background-color: white;
+				padding: 5px 10px;
+				border: 1px solid gray;
+				cursor: pointer;
+				transition: 0.2s ease;
+			}
+
+			.block-btn {
+				color: red;
+			}
+
+			button:hover {
+				background-color: rgb(255, 50, 50);
+				color: black;
+			}
+		}
+	}
+}
+
+.seller-product {
+	h2 {
+		margin-bottom: 20px;
+		font-size: 1.2rem;
+	}
+}

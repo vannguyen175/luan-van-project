@@ -1,0 +1,112 @@
+.container {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: none;
+	border: 1px solid green;
+	border-radius: 8px;
+	width: 94.2%;
+	height: fit-content;
+	padding: 0 5px;
+	margin: 20px;
+	margin-bottom: 0px;
+
+	textarea {
+		height: 130px;
+	}
+
+	.input {
+		border: 1px solid black;
+		padding: 5px 10px;
+		margin: -5px 0 10px 0;
+		height: 35px;
+		outline: none;
+		z-index: 2;
+		background-color: transparent;
+		border: none;
+		width: 100%;
+
+		&:placeholder-shown {
+			margin-top: 15px;
+		}
+
+		&:placeholder-shown ~ .text {
+			position: absolute;
+			transition: 0.2s ease;
+			color: var(--main-color);
+			//font-weight: 500;
+			left: 10px;
+			//top: 0px;
+			padding-top: 0px;
+			padding-bottom: 3px;
+		}
+	}
+
+	.text {
+		position: absolute;
+		margin: 0px 5px;
+		margin-bottom: 0px;
+		//font-size: 1rem;
+		user-select: none;
+		z-index: 1;
+	}
+
+	.clear-input {
+		position: absolute;
+		right: 5px;
+		display: none;
+		padding: 8px;
+		z-index: 3;
+		color: var(--main-color);
+	}
+}
+
+//trong trạng thái focus
+.container:focus-within {
+	border: 1.5px solid var(--main-color);
+	padding: 0px 5px;
+	.input {
+		margin-top: 20px;
+		border: none;
+	}
+	.text {
+		transition: 0.2s ease;
+		color: var(--main-color);
+		font-weight: 700;
+		left: 10px;
+		top: 5px;
+		font-size: 0.7rem;
+		padding-top: 0px;
+	}
+}
+
+//khi không có placeholder => có input value
+.input {
+	&:not(:placeholder-shown) {
+		margin-top: 20px;
+	}
+
+	&:not(:placeholder-shown) ~ .text {
+		transition: 0.2s ease;
+		color: var(--main-color);
+		font-size: 0.7rem;
+		font-weight: 700;
+		top: 5px;
+		left: 10px;
+		bottom: 0px;
+	}
+	&:not(:placeholder-shown) ~ .clear-input {
+		display: flex;
+		font-size: 1rem;
+	}
+}
+
+.show-error {
+	display: block;
+	text-align: start;
+	color: red;
+	margin: 0px 20px;
+	font-size: 0.8rem;
+	font-weight: 500;
+}

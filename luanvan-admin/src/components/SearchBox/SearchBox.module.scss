@@ -1,0 +1,28 @@
+.box-search {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.input-search {
+	height: 30px;
+	padding: 3px 5px;
+	border: 1px solid var(--main-color);
+	border-radius: 5px 0 0 5px;
+	outline: none;
+}
+
+.button-search {
+	height: 30px;
+	padding: 0 5px;
+	border-radius: 0 5px 5px 0;
+	border: 1px solid var(--main-color);
+	background-color: white;
+	color: var(--main-color);
+	cursor: pointer;
+	transition: 0.2s ease;
+
+	&:hover {
+		background-color: var(--light-color);
+	}
+}
