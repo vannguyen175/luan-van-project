@@ -1,0 +1,28 @@
+.pagination-btn,
+.pagination-number {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #e0e0e0;
+	background-color: #fff;
+	color: #000000;
+	margin: 0 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+
+.active {
+	background-color: var(--main-color);
+	color: white;
+}
+
+.pagination-btn:disabled,
+.pagination-number:disabled {
+	cursor: not-allowed;
+	opacity: 0.5;
+}
+
+.pagination-btn:hover:not(:disabled),
+.pagination-number:hover:not(.active) {
+	background-color: #f1f1f1;
+}
