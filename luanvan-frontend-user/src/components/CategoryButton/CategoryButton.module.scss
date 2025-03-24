@@ -1,0 +1,31 @@
+.container {
+    // flex-direction: column;
+    display: inline-block;
+    margin: 10px 20px 0 20px;
+    width: 100px;
+    border: none;
+
+    padding: 5px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+
+    img {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+    }
+
+    div {
+        font-weight: 500;
+        margin-top: 5px;
+        color: black;
+    }
+
+    &:hover {
+        background-color: var(--light-color);
+        img {
+            opacity: 0.8;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.container {
+	//width: 200px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	padding: 10px 5px;
+}
+
+.title {
+	font-weight: 500;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.drag-area {
+	width: fit-content;
+	margin: 0 auto;
+	background-color: #f7f4ef;
+	border: 1px dashed var(--main-color);
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+
+	input {
+		display: none;
+	}
+
+	button {
+		border: none;
+		background-color: transparent;
+	}
+}
+
+.preview {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.image {
+	position: relative;
+	// background-color: black;
+	border: 1px solid var(--main-color);
+	border-radius: 10px;
+	width: 100px;
+	height: 100px;
+	//overflow: hidden;
+	transition: 0.1 ease;
+	padding: 5px;
+	margin: 10px;
+
+	img {
+		width: 90px;
+		height: 90px;
+		z-index: 1;
+		border-radius: 5px;
+	}
+
+	.delete {
+		position: absolute;
+		z-index: 999;
+		top: -15px;
+		right: -10px;
+		font-size: 1.6rem;
+		cursor: pointer;
+		color: rgb(128, 128, 128);
+
+	}
+
+	.delete:hover {
+		font-weight: 700;
+	}
+
+	img:hover {
+		opacity: 0.8;
+	}
+}

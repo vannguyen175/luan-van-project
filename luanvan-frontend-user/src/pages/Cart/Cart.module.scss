@@ -1,0 +1,96 @@
+.container {
+	margin: auto;
+	width: 900px;
+}
+
+.cart {
+	//border: 1px solid gray;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 20px 10px;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+	background-color: white;
+	img {
+		width: 100px;
+		height: 100px;
+		border: 1px solid black;
+		border-radius: 5px;
+	}
+
+	.detail {
+		margin-left: 40px;
+		.seller {
+			cursor: pointer;
+			&:hover {
+				font-weight: 500;
+			}
+		}
+		
+		.name {
+			margin-top: 10px;
+			font-weight: 500;
+			font-size: 1.1rem;
+			cursor: pointer;
+		}
+		.price {
+			font-weight: 500;
+			margin-bottom: 10px;
+		}
+	}
+
+	.quantity {
+		p {
+			font-size: 0.8rem;
+			margin-bottom: 6px;
+		}
+		div {
+			display: flex;
+			margin-bottom: 10px;
+			svg {
+				border: 0.5px solid black;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			p {
+				margin: 0 10px;
+				font-size: 1.2rem;
+				font-weight: 500;
+			}
+		}
+		.price {
+			font-size: 1.2rem;
+			color: var(--orange-color);
+			font-weight: 500;
+			margin-top: -7px;
+		}
+	}
+	.action {
+		padding-top: 10px;
+	}
+}
+
+.summary {
+	position: sticky;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	padding: 20px 10px;
+	margin-top: 10px;
+	p {
+		margin-left: 10px;
+		margin-bottom: 20px;
+	}
+
+	button {
+		width: 100%;
+		padding: 8px 20px;
+		border: 1px solid gray;
+		transition: 0.2s ease;
+		background-color: var(--orange-color);
+		color: white;
+		border-radius: 3px;
+	}
+	.disabled {
+		background-color: rgb(216, 216, 216);
+		pointer-events: none;
+	}
+}

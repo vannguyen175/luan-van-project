@@ -1,0 +1,82 @@
+// .wrapper {
+//     min-width: 100px;
+//     padding: 5px 10px;
+//     font-size: 1.2rem;
+//     font-weight: 500;
+//     border-radius: 3px;
+//     background-color: var(--main-color);
+// }
+
+.button {
+	padding: 5px 10px;
+	margin: 3px 5px;
+	border-radius: 3px;
+	color: var(--main-color);
+	background-color: rgb(255, 255, 255);
+	border: 1px solid var(--main-color);
+	font-weight: 600;
+	transition: 0.2s ease;
+	&:hover {
+		color: var(--main-color);
+		background-color: var(--light-color);
+	}
+}
+
+.primary-btn,
+a[href].primary {
+	background-color: var(--main-color);
+	color: white;
+	border-radius: 5px;
+	//display: flex;
+	justify-content: center;
+	align-items: center;
+	&:hover {
+		background-color: #216d59;
+		color: white;
+	}
+}
+
+.button.chosenBtn,
+a[href].chosenBtn {
+	background-color: var(--light-color);
+	color: var(--main-color);
+	border-radius: 5px;
+	border: rgb(254, 238, 168);
+	//display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+}
+
+.secondary {
+	background-color: rgb(255, 255, 255);
+	color: var(--main-color);
+	transition: 0.2s ease;
+	&:hover {
+		color: var(--main-color);
+		background-color: var(--light-color);
+	}
+}
+
+.chosen-btn {
+	background-color: var(--main-color);
+	color: white;
+	pointer-events: none;
+}
+
+.disabled {
+	background-color: rgb(198, 198, 198);
+	color: white;
+	pointer-events: none;
+	border: none;
+}
+
+.danger {
+	border: 1px solid red;
+	color: red;
+
+	&:hover {
+		background-color: rgb(255, 212, 212);
+		color: red;
+	}
+}

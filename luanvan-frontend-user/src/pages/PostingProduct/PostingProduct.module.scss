@@ -1,0 +1,46 @@
+.upload-image {
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid black;
+
+    p:nth-of-type(1) {
+        margin-bottom: 30px;
+    }
+}
+
+.address-form {
+    width: 500px;
+    margin: 30px auto;
+}
+
+.steps {
+	display: flex;
+	margin-top: 20px;
+
+	button {
+		border: none;
+		padding: 5px;
+		background-color: white;
+		margin: 0px 10px;
+		transition: 0.2s ease;
+	}
+
+	.active-step {
+		border-bottom: 2px solid var(--main-color);
+		font-weight: 500;
+		color: var(--main-color);
+	}
+}
+
+.guideline {
+	width: 30%;
+	min-height: 70vh;
+}
+
+.input-form {
+	border: 1px solid rgb(189, 189, 189);
+	padding:  10px;
+	border-radius: 3px;
+	width: 100%;
+}
+

@@ -1,0 +1,45 @@
+.backgroundImage {
+	//background-image: url("https://images.pexels.com/photos/7303151/pexels-photo-7303151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	// background-color: var(--main-color);
+	//background-image: linear-gradient(180deg, var(--light-color), var(--main-color));
+	height: 100vh;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	// margin-top: -50px;
+	background-size: cover;
+	padding-top: 30px;
+}
+
+.container {
+	width: 500px;
+	height: fit-content;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255, 0.8);
+	// background-color: rgba(255,255,255,0.4);
+	// backdrop-filter: blur(10px);
+
+	h2 {
+		margin: 30px 0px 30px 20px;
+		font-size: 1.8rem;
+	}
+}
+
+.login-btn {
+	// display: block;
+	width: 300px;
+}
+
+form {
+	text-align: center;
+}
+
+.register-link {
+	margin-top: 10px;
+	a {
+		font-weight: 700;
+		color: var(--orange-color);
+	}
+}

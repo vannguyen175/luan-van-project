@@ -1,0 +1,54 @@
+.noNotification {
+	width: 200px;
+}
+
+.haveNotification {
+	min-width: 380px;
+	width: 400px;
+	img {
+		width: 50px;
+		height: 50px;
+		margin-right: 10px;
+	}
+	div {
+		cursor: pointer;
+		padding: 3px 5px;
+		transition: 0.2s ease;
+	}
+	div:hover {
+		background-color: var(--light-color);
+	}
+	.unSeen {
+		background-color: #edecd4;
+	}
+}
+
+.more-detail {
+	text-align: center;
+	border-top: 1px solid rgb(126, 126, 126);
+}
+
+.show-noti {
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 600px;
+	background-color: white;
+	margin: 10px auto;
+	img {
+		width: 50px;
+		height: 50px;
+		margin-right: 10px;
+	}
+	div {
+		cursor: pointer;
+		padding: 3px 5px;
+		transition: 0.2s ease;
+		margin: 2px 0;
+	}
+	div:hover {
+		background-color: #9fd393;
+	}
+	.unSeen {
+		background-color: #bcfcae;
+	}
+}

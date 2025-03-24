@@ -1,0 +1,46 @@
+.menu-navigate {
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0px;
+	display: block;
+	width: 340px;
+	transition: all 0.4s ease;
+	background-color: #419366;
+	height: fit-content;
+
+	.menu-navigate-header {
+		float: right;
+	}
+	.menu {
+		margin-top: 50px;
+		color: white;
+		div {
+			border: 1px solid white;
+			padding: 10px 10px;
+			border-radius: 5px;
+			margin: 10px 0;
+			cursor: pointer;
+		}
+
+		div:hover,
+		.menu-active {
+			background-color: var(--light-color);
+			color: var(--main-color);
+		}
+	}
+}
+
+.close {
+	width: 60px;
+	transition: all 0.4s ease;
+
+	.menu {
+		display: none;
+	}
+}
+
+.body {
+	overflow: unset;
+	width: 100%;
+	transition: all 0.4s ease;
+}

@@ -1,0 +1,126 @@
+.container {
+	//horizontal (ngang)
+	position: relative;
+	border: 1px solid var(--main-color);
+	width: 48%;
+	min-width: 550px;
+	min-height: 163px;
+	padding: 5px;
+	margin: 5px 40px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.8);
+	transition: 0.1s ease;
+
+	&:hover {
+		background-color: var(--secondary-color);
+		cursor: pointer;
+	}
+}
+
+.image-product {
+	position: absolute;
+	width: 120px;
+	height: 150px;
+}
+
+.detail-product {
+	padding: 10px 5px;
+	.name {
+		font-size: 1.2rem;
+		color: black;
+		font-weight: 600;
+		white-space: nowrap; /* Ngăn cách dòng, giữ văn bản trên một dòng duy nhất */
+		overflow: hidden; /* Ẩn phần vượt quá khung chứa */
+		text-overflow: ellipsis;
+	}
+
+	.price {
+		color: rgb(210, 69, 69);
+		font-size: 1rem;
+		font-weight: 700;
+	}
+
+	.info-seller {
+		position: absolute;
+		bottom: 10px;
+		p {
+			display: flex;
+			align-items: center;
+		}
+		div {
+			display: flex;
+			align-items: center;
+			margin-right: 7px;
+			font-size: 0.5rem;
+		}
+		.icon {
+			width: 15px;
+			margin-right: 10px;
+		}
+	}
+}
+
+.like-btn {
+	margin-top: 10px;
+	padding-left: 2px;
+}
+
+// vertical card product
+
+.container-vertical {
+	position: relative;
+	border: 1px solid var(--main-color);
+	display: flex;
+	flex-direction: column;
+	width: 55%;
+	width: 220px;
+	height: 300px;
+	padding: 5px;
+	margin: 15px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.8);
+	transition: 0.1s ease;
+
+	&:hover {
+		background-color: var(--secondary-color);
+	}
+}
+
+.image-product-vertical {
+	height: 170px;
+}
+
+.detail-product-vertical {
+	padding: 10px 5px;
+	.name {
+		font-size: 1rem;
+		color: black;
+		font-weight: 600;
+		margin: 0;
+		display: -webkit-box; /* Sử dụng box layout của webkit */
+		-webkit-box-orient: vertical; /* Đặt hướng box thành vertical (dọc) */
+		-webkit-line-clamp: 2;
+		line-clamp: 2; /* Giới hạn số dòng là 2 */
+		overflow: hidden; /* Ẩn phần vượt quá khung chứa */
+		text-overflow: ellipsis; /* Thêm dấu ba chấm ở cuối văn bản bị cắt */
+		max-width: 100%; /* Đảm bảo phần tử không vượt quá khung chứa */
+		line-height: 1.5; /* Chiều cao dòng, điều chỉnh theo thiết kế của bạn */
+		height: 3em;
+	}
+
+	.price {
+		color: rgb(210, 69, 69);
+		font-size: 1rem;
+		font-weight: 700;
+		margin: 0;
+	}
+
+	.info-seller {
+		position: absolute;
+		div,
+		time {
+			margin-right: 7px;
+			font-size: 0.8rem;
+		}
+	}
+}

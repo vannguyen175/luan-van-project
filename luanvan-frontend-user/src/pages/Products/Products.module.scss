@@ -1,0 +1,23 @@
+.container {
+	width: 100%;
+}
+
+.filter {
+	margin-top: 10px;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	//justify-content: space-around;
+	padding: 20px 0;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	margin-top: 20;
+	width: 100%;
+}
+
+

@@ -1,0 +1,128 @@
+.profile {
+	width: 30%;
+	position: sticky;
+	padding-bottom: 20px;
+	.avatar {
+		width: 100px;
+		height: 100px;
+		border-radius: 10px;
+		margin-right: 10px;
+	}
+
+	.rating {
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+		margin-top: 10px;
+
+		span {
+			scale: 1.2;
+		}
+
+		p,
+		strong {
+			margin-left: 20px;
+		}
+	}
+}
+
+.nav-bar {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 20px;
+	p {
+		box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+		width: 50%;
+		padding: 5px 0;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: 0.2s ease;
+	}
+
+	p.active {
+		background-color: var(--main-color);
+		color: white;
+	}
+
+	p:hover {
+		background-color: var(--light-color);
+	}
+}
+
+.product {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+
+}
+
+.product-card {
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+	border-radius: 5px;
+	width: 29%;
+	height: 310px;
+	padding: 5px 20px 20px 20px;
+	margin: 20px;
+	img {
+		width: 200px;
+		height: 150px;
+		display: block;
+		margin: 5px auto;
+	}
+
+	.name {
+		color: black;
+		font-weight: 600;
+		margin: 0;
+		font-size: 1.2rem;
+		display: -webkit-box; /* Sử dụng box layout của webkit */
+		-webkit-box-orient: vertical; /* Đặt hướng box thành vertical (dọc) */
+		-webkit-line-clamp: 1;
+		line-clamp: 1; /* Giới hạn số dòng là 1 */
+		overflow: hidden; /* Ẩn phần vượt quá khung chứa */
+		text-overflow: ellipsis; /* Thêm dấu ba chấm ở cuối văn bản bị cắt */
+		max-width: 100%; /* Đảm bảo phần tử không vượt quá khung chứa */
+		line-height: 1.5; /* Chiều cao dòng, điều chỉnh theo thiết kế của bạn */
+		height: 1.5em;
+	}
+
+	.price {
+		margin-top: 10px;
+		font-size: 1.2rem;
+		color: red;
+	}
+
+	button {
+		display: block;
+		width: 200px;
+		background-color: var(--main-color);
+		border: none;
+		padding: 5px auto;
+		border-radius: 5px;
+		color: white;
+		margin: 10px auto;
+	}
+}
+
+.rating-card {
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	padding: 5px;
+	width: 90%;
+	margin: 10px auto;
+
+	.img-product {
+		img {
+			width: 100px;
+			height: 100px;
+			border-radius: 5px;
+			vertical-align: middle;
+		}
+	}
+	.details {
+		padding: 10px;
+		.name {
+			font-weight: 500;
+		}
+	}
+}

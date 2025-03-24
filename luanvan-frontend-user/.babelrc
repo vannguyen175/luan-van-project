@@ -1,0 +1,13 @@
+//viết tắt đường dẫn path của các thư mục
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "~": "./src"
+        }
+      }
+    ]
+  ]
+}

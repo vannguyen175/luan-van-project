@@ -1,0 +1,90 @@
+// .container {
+// 	position: absolute;
+// }
+
+.search {
+	position: absolute;
+	top: 20px;
+	display: flex;
+	align-items: center;
+	margin-top: -1px;
+	z-index: 100;
+	input {
+		min-width: 420px;
+		height: 30px;
+		border-radius: 8px 0px 0px 8px;
+		border: 1px solid var(--light-color);
+		padding-left: 10px;
+	}
+
+	button {
+		background-color: var(--black-color);
+		color: white;
+		margin-left: -3px;
+		padding: 3px 10px;
+		border-radius: 0px 8px 8px 0px;
+		border: 1px solid var(--black-color);
+		font-size: 0.8rem;
+
+		&:hover {
+			background-color: black;
+			color: white;
+		}
+	}
+}
+
+.result {
+	position: absolute;
+	top: 50px;
+	display: block;
+	background-color: rgb(255, 255, 255);
+	border-radius: 8px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	width: 455px;
+	max-height: 300px;
+	overflow-y: scroll;
+	padding: 4px 10px;
+	cursor: pointer;
+	z-index: 99;
+
+	ul {
+		margin: 5px 5px;
+		padding: 0;
+	}
+
+	li {
+		display: flex;
+		padding: 5px 10px;
+		width: 100%;
+		margin: 5px;
+
+		img {
+			width: 50px;
+			height: 50px;
+			margin-right: 10px;
+		}
+
+		.name {
+			font-weight: 500;
+			margin: 0;
+			display: -webkit-box; /* Sử dụng box layout của webkit */
+			-webkit-box-orient: vertical; /* Đặt hướng box thành vertical (dọc) */
+			-webkit-line-clamp: 1;
+			line-clamp: 1; /* Giới hạn số dòng là 2 */
+			overflow: hidden; /* Ẩn phần vượt quá khung chứa */
+			text-overflow: ellipsis; /* Thêm dấu ba chấm ở cuối văn bản bị cắt */
+			max-width: 100%; /* Đảm bảo phần tử không vượt quá khung chứa */
+			line-height: 1.5; /* Chiều cao dòng, điều chỉnh theo thiết kế của bạn */
+			height: 1.2rem;
+		}
+
+		.price {
+			color: rgb(255, 82, 82);
+			font-size: 0.9rem;
+			margin-top: 10px;
+		}
+	}
+	li:hover {
+		background-color: var(--light-color);
+	}
+}

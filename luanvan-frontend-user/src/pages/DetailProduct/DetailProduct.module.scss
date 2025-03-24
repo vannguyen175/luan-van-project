@@ -1,0 +1,200 @@
+.carousel {
+	width: 90%;
+	background-color: #eeeeee;
+	text-align: center;
+	img {
+		max-width: 300px;
+		min-width: 200px;
+		max-height: 400px;
+		min-height: 250px;
+	}
+
+	.carousel-control-prev-icon,
+	.carousel-control-next-icon {
+		background-color: black;
+	}
+}
+
+.details {
+	.title {
+		font-size: 25px;
+		margin: 10px 0;
+		color: var(--main-color);
+		font-weight: 700;
+	}
+	.price {
+		font-size: 20px;
+		color: red;
+		font-weight: 500;
+		margin-bottom: 20px;
+	}
+
+	.note {
+		margin: 5px;
+		margin-right: 70px;
+		.icon {
+			margin-right: 10px;
+			width: 15px;
+		}
+	}
+}
+
+.description {
+	white-space: pre-line;
+	margin-left: 10px;
+
+	.info {
+		margin-left: 20px;
+		.icon {
+			width: 10px;
+			margin: 3px 10px 0 0;
+		}
+	}
+}
+
+.right {
+	.button {
+		margin-top: 50px;
+		button {
+			display: block;
+			width: 95%;
+			margin: 10px auto;
+		}
+	}
+}
+
+.detail-seller {
+	margin: 10px;
+	align-items: center;
+	hr {
+		margin-top: 35px;
+	}
+	.main-info {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		.avatar {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+		}
+
+		.name {
+			margin-left: 20px;
+			font-weight: 500;
+			font-size: 1.2rem;
+			cursor: pointer;
+			color: var(--main-color);
+		}
+		.chat-btn {
+			background-color: white;
+			border-radius: 3px;
+			padding: 5px 10px;
+			margin-left: 30px;
+			color: var(--main-color);
+			font-weight: 500;
+			border: 1px solid var(--main-color);
+			cursor: pointer;
+			transition: 0.2s ease;
+		}
+		.chat-btn:hover {
+			background-color: var(--light-color);
+		}
+	}
+}
+
+.other-items {
+	width: 100%;
+	margin: 0 0 15px 10px;
+}
+
+.tab-button {
+	background-color: rgb(201, 228, 198);
+	padding: 5px 5px;
+	text-align: center;
+	margin: 10px auto;
+	border-radius: 10px;
+	width: fit-content;
+
+	button {
+		background-color: rgb(201, 228, 198);
+		border: none;
+		border-radius: 10px;
+		color: black;
+		transition: 0.2s ease;
+		padding: 5px 25px;
+	}
+
+	.button-active {
+		background-color: var(--main-color);
+		padding: 5px 20px;
+		color: white;
+	}
+}
+
+.sticky {
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0px;
+	display: block;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.actions {
+	margin-bottom: 30px;
+	margin-top: 40px;
+
+	.actions-price {
+		margin-right: 80px;
+		p {
+			color: grey;
+			font-size: 0.8rem;
+			display: block;
+			line-height: 2px;
+			margin-bottom: 10px;
+		}
+		strong {
+			font-weight: 500;
+			font-size: 1.4rem;
+		}
+	}
+
+	.actions-quantity {
+		vertical-align: middle;
+		svg {
+			display: inline-block;
+			background-color: var(--black-color);
+			color: white;
+			border-radius: 50%;
+			cursor: pointer;
+			font-size: 1.2rem;
+		}
+		p {
+			color: grey;
+			font-size: 0.8rem;
+			display: block;
+			line-height: 2px;
+			margin-bottom: 10px;
+		}
+		.quantity-input {
+			width: 50px;
+			height: 30px;
+			text-align: center;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			margin: 0 5px;
+		}
+	}
+
+	.actions-button {
+		margin-top: 10px;
+		display: flex;
+		justify-content: center;
+	}
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
